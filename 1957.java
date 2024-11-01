@@ -1,21 +1,22 @@
 class Solution {
     public String makeFancyString(String s) {
-        StringBuilder result = new StringBuilder();
-        
-        for (int i = 0; i < s.length(); i++) {
-            char current = s.charAt(i);
-            int n = result.length();
-            
-            // Check if the last two characters are the same as the current character
-            if (n >= 2 && result.charAt(n - 1) == current && result.charAt(n - 2) == current) {
-                continue; // Skip adding the current character to avoid three consecutive identical characters
-            }
-            
-            result.append(current);
+        int n= s.length();
+        if(n<=2)
+        {
+            return s;
         }
-        
-        return result.toString();
+        StringBuilder b = new StringBuilder();
+        b.append(s.charAt(0));
+        b.append(s.charAt(1));
+        for(int i=2;i<n;i++)
+        {
+            if(b.charAt(b.length()-1)!=s.charAt(i)||b.charAt(b.length()-2)!=s.charAt(i))
+            {
+                b.append(s.charAt(i));
+            }
+        }
+        return b.toString();
+
     }
-        
     
 }
