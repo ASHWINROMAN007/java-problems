@@ -12,10 +12,10 @@ class Solution {
             s2.add(num);
         }
 
-        // Retain only the elements present in both sets
+        
         s1.retainAll(s2);
 
-        // Convert the set to an array
+
         int[] result = new int[s1.size()];
         int i = 0;
         for (int num : s1) {
