@@ -31,7 +31,7 @@ class Solution {
         a[i] = a[j];
         a[j] = t;
     }
-
+ 
     // Reverse method
     public void rev(int[] a, int s, int e) {
         while (s < e) {
