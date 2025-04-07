@@ -4,7 +4,6 @@ class Solution {
         List<Integer> less = new ArrayList<>();
         List<Integer> equal = new ArrayList<>();
         List<Integer> greater = new ArrayList<>();
-        
         for (int num : nums) {
             if (num < pivot) {
                 less.add(num);
