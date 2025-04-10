@@ -4,7 +4,6 @@ class Solution {
         int[] re = new int[n];
         if (k == 0) {
             return re;
-
         } else if (k > 0) {
             for (int i = 0; i < n; i++) {
                 int c = 0;
