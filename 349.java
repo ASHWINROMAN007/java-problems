@@ -21,7 +21,6 @@ class Solution {
         for (int num : s1) {
             result[i++] = num;
         }
-
-        return result;
+      return result;
     }
 }
