@@ -12,7 +12,6 @@ c++;
             {
                 return false;
             }
-            
         }
         return true;
     }
