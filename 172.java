@@ -7,6 +7,4 @@ class Solution {
         }
         return count;
     }
-
-    
 }
