@@ -12,7 +12,6 @@ class Solution {
             sum+=n;
             pq.add((int)(Math.ceil((double)n/3)));
          }
-         return sum;
-        
+         return sum; 
     }
 }
