@@ -12,7 +12,6 @@ class Solution {
             }
             expected++; 
         }
-
         return n; 
     }
 }
