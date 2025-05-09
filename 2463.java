@@ -45,8 +45,6 @@ class Solution {
                 dp[i][j] = qq.peekFirst().getValue() + prefix;
             }
         }
-        
-        // Return minimum total distance for all robots
         return dp[0][0];
     }
     
