@@ -47,8 +47,6 @@ class Solution {
         }
         return dp[0][0];
     }
-    
-    // Helper class to store key-value pairs
     private static class Pair<K, V> {
         private K key;
         private V value;
