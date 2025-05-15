@@ -1,6 +1,5 @@
 class Solution {
     static ArrayList<Integer> getXor(ArrayList<Integer> A, int N) {
-        // code here
         int s=0;
         for(int a : A)
         {
