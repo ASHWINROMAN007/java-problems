@@ -25,7 +25,6 @@ class Solution {
             else{
                 st.push(Integer.parseInt(a));
             }
-
         }
          int ans = 0;
         if(st.isEmpty()) return ans;
