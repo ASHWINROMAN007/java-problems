@@ -16,7 +16,6 @@ class Solution {
                 sl=arr[i];
             }
         }
-   
         return sl;
     }
 }
