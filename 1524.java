@@ -17,7 +17,6 @@ class Solution {
                 ce++;
             }
         }
-        
         return r;
     }
 }

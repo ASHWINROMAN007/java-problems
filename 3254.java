@@ -22,7 +22,6 @@ class Solution {
                 results[i] = -1; 
             }
         }
-        
         return results;
     }
 }
