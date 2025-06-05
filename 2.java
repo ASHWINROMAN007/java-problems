@@ -3,7 +3,6 @@ class Solution {
         ListNode dum = new ListNode(0);
         ListNode tail = dum;
         int carry = 0;
-
         while (l1 != null || l2 != null || carry != 0) {
             int dig1 = (l1 != null) ? l1.val : 0;
             int dig2 = (l2 != null) ? l2.val : 0;
