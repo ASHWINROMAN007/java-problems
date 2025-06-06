@@ -1,5 +1,4 @@
 import java.util.*;
-
 class Solution {
     public static ArrayList<ArrayList<Integer>> getPairs(int[] arr) {
         ArrayList<ArrayList<Integer>> result = new ArrayList<>();
