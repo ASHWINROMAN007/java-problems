@@ -25,8 +25,7 @@ class Solution {
             } else {
                 minVal = nums[i]; 
             }
-        }
-        
+        } 
         return maxDiff;
     }
 }
