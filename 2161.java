@@ -13,7 +13,6 @@ class Solution {
                 greater.add(num);
             }
         }
-        
         // Merge all lists
         List<Integer> result = new ArrayList<>();
         result.addAll(less);
