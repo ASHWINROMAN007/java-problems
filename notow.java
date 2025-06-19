@@ -12,7 +12,6 @@ class Solution {
         return convertToWords(num);
     }
 
-    
     private String convertToWords(int num) {
         if (num < 10) {
             return belowTen[num];
