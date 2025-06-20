@@ -1,12 +1,11 @@
-
 import java.util.*;
 
 class Solution {
     public int lengthOfLongestSubstring(String s) {
         Map<Character, Integer> map = new HashMap<>();
-        int maxLength = 0, left = 0;
+        int maxLength = 0, left = 0, right =0;
 
-        for (int right = 0; right < s.length(); right++) {
+        while(right < s.length()) {
             char c = s.charAt(right);
     
             if (map.containsKey(c)) {
@@ -14,6 +13,7 @@ class Solution {
             }
             map.put(c, right);   
             maxLength = Math.max(maxLength, right - left + 1);
+            right++;
         }
 
         return maxLength;
