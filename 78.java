@@ -7,7 +7,6 @@ class Solution {
             return;
         }
 
-        
         fu(i+ 1,n,nums, li, re);
         li.add(nums[i]);
         fu(i+ 1,n,nums, li, re);
