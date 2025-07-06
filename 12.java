@@ -11,7 +11,6 @@ class Solution {
                 num-=n[i];
             }
         }
-        return sb.toString();
-        
+        return sb.toString();  
     }
 }
