@@ -12,7 +12,6 @@ class Solution {
         if(s==x)
             return true;
         else
-            return false;
-        
+            return false;  
     }
 }
