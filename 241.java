@@ -22,7 +22,6 @@ class Solution {
                             case '*':
                                  re.add(left*right);
                                  break;
-
                         }
                     }
                 }        
