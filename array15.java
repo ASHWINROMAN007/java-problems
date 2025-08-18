@@ -1,5 +1,4 @@
 class Solution {
-    // Function to remove duplicates from the given array
     public int removeDuplicates(int[] arr) {
         // Code Here
         int i =0;
