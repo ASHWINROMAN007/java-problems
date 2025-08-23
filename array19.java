@@ -11,7 +11,7 @@ class Solution {
             }
         }
 
-        // If there are no zeros, no need to do anything
+        // If  there are no zeros,no need to do anything
         if (j == -1) {
             return;
         }
