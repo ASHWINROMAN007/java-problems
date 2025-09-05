@@ -9,7 +9,7 @@ class Solution {
             int width = right - left;
             int currentArea = minHeight * width;
             
-            // Update max area if needed
+            // Update max area if need
             maxArea = Math.max(maxArea, currentArea);
             
             // Move the pointer pointing to the smaller height
