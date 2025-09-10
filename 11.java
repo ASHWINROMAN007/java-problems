@@ -12,7 +12,7 @@ class Solution {
             // Update max area if need
             maxArea = Math.max(maxArea, currentArea);
             
-            // Move the pointer pointing to the smaller heights
+            // Move the pointer pointing to the smaller height
             if (height[left] < height[right]) {
                 left++;
             } else {
