@@ -8,7 +8,7 @@ class Solution {
             int dig2 = (l2 != null) ? l2.val : 0;
 
             int sum = dig1 + dig2 + carry;
-            int dig = sum % 10;      // Current digit to store
+            int dig = sum % 10;      // Current digit to stores
             carry = sum / 10;        // Update carry
 
             ListNode ne = new ListNode(dig);
