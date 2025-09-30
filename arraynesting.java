@@ -2,14 +2,14 @@ import java.util.*;
 public class arraynesting {
     public static int nest(int in , int[] arr ,boolean[]vis)
     {
-        int c = 0;
+        int cou = 0;
         while(!vis[in])
         {
         vis[in]=true;
         in = arr[in];
-        c++;
+        cou++;
         }
-        return c;
+        return cou;
     }
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
