@@ -1,19 +1,27 @@
 import java.util.*;
 public class contiguousArray {
     public static int con(int[] arr) {
+        int[] co = new int[2*arr.length+1];
+        int c=0;
         int maxlen=0;
-        for(int i = 0 ; i<arr.length;i++)
+        for(int i = 0;i<co.length;i++)
         {
-             int c = 0;
-            for(int j = i;j<arr.length;j++)
+            co[i]=-2;
+        }
+        int of = arr.length;
+        co[of]=-1;
+        for(int j = 0;j<arr.length;j++)
             {
             if(arr[j]==0) c--;
             else c++;
-            if(c==0)
+            int in = c+of;
+            if(co[in]!=-2)
             {
-                maxlen = Math.max(maxlen,j-i+1);
+                maxlen = Math.max(maxlen,j-(co[in]));
             }
-        }
+            else{
+                co[in]=j;
+            }
         }
         return maxlen;
     
