@@ -1,23 +1,21 @@
 import java.util.*;
 public class contiguousArray {
     public static int con(int[] arr) {
-        int c = 0;
+        int maxlen=0;
         for(int i = 0 ; i<arr.length;i++)
         {
-            if(arr[i]==0)
+             int c = 0;
+            for(int j = i;j<arr.length;j++)
             {
-                --c;
-            }
-            else 
-            {
-                ++c;
-            }
+            if(arr[j]==0) c--;
+            else c++;
             if(c==0)
             {
-                return i+1;
+                maxlen = Math.max(maxlen,j-i+1);
             }
         }
-        return c;
+        }
+        return maxlen;
     
     }
     public static void main(String[] args) {
