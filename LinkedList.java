@@ -24,6 +24,21 @@ public class LinkedList {
        }
        c.next = i;
     }
+    public void insertm(int i , int d)
+    {
+        node n = new node(d);
+        node c = head;
+        int it = 0;
+        while(it<i-1)
+        {
+            c=c.next;
+            it++;
+        }
+        n.next = c.next;
+        c.next=n;
+    
+
+    }
     public void delete(int d)
     {
         node c = head,prev = null;
@@ -60,7 +75,7 @@ public class LinkedList {
         l.insert(5);
         l.insert(6);
         l.insert(7);
-        l.delete(7);
+        l.insertm(2,8);
         l.display();
     }
 }
