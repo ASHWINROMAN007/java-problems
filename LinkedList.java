@@ -39,6 +39,22 @@ public class LinkedList {
     
 
     }
+    public node reverse()
+    {
+        node p = null;
+        node c = head;
+        node n = null;
+        while(c!=null)
+        {
+            n = c.next;
+            c.next = p;
+            p = c;
+            c = n; 
+
+        }
+        return p;
+
+    }
     public void delete(int d)
     {
         node c = head,prev = null;
@@ -77,5 +93,6 @@ public class LinkedList {
         l.insert(7);
         l.insertm(2,8);
         l.display();
+        l.reverse();
     }
 }
