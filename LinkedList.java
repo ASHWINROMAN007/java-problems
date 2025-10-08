@@ -39,7 +39,7 @@ public class LinkedList {
     
 
     }
-    public node reverse()
+    public void reverse()
     {
         node p = null;
         node c = head;
@@ -52,7 +52,8 @@ public class LinkedList {
             c = n; 
 
         }
-        return p;
+        head = p;
+        display();
 
     }
     public void delete(int d)
