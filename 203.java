@@ -23,4 +23,4 @@ class Solution {
         } if (head!=null&&head.val==val) head=head.next;
             return head;
     }
-}
+} 
