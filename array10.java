@@ -5,7 +5,7 @@ class Solution {
         int n = arr.length;
         long sum = 0;
 
-        // Sort the array
+        // Sort the arrays
         Arrays.sort(arr);
 
         // Calculate the weighted sum using modular arithmetic
