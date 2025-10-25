@@ -24,6 +24,35 @@ public class LinkedList {
        }
        c.next = i;
     }
+        public void change(int a, int b) {
+    if (a == b) return;
+
+    node prevA = null, currA = head;
+    while (currA != null && currA.data != a) {
+        prevA = currA;
+        currA = currA.next;
+    }
+
+    node prevB = null, currB = head;
+    while (currB != null && currB.data != b) {
+        prevB = currB;
+        currB = currB.next;
+    }
+    if (currA == null || currB == null) return;
+    if (prevA != null) {
+        prevA.next = currB;
+    } else {
+        head = currB;
+    }
+    if (prevB != null) {
+        prevB.next = currA;
+    } else {
+        head = currA;
+    }
+    node temp = currA.next;
+    currA.next = currB.next;
+    currB.next = temp;
+}
     public void insertm(int i , int d)
     {
         node n = new node(d);
@@ -94,6 +123,8 @@ public class LinkedList {
         l.insert(7);
         l.insertm(2,8);
         l.display();
-        l.reverse();
+        l.change(4,8);
+        System.out.println(" ");
+        l.display();
     }
 }
