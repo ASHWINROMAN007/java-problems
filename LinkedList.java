@@ -9,7 +9,7 @@ public class LinkedList {
         }
     }
     node head;
-    public void insert(int d)
+    public void inserte(int d)
     {
        node i = new node(d);
        if(head == null)
@@ -23,6 +23,27 @@ public class LinkedList {
         c = c.next;
        }
        c.next = i;
+    } public void insertm(int i , int d)
+    {
+        node n = new node(d);
+        node c = head;
+        int it = 0;
+        while(it<i-1)
+        {
+            c=c.next;
+            it++;
+        }
+        n.next = c.next;
+        c.next=n;
+    
+
+    }
+    public void inserts(int a)
+    {
+        node n = new node(a);
+        node e = head;
+        n.next=e;
+        head=n;
     }
         public void change(int a, int b) {
     if (a == b) return;
@@ -53,21 +74,7 @@ public class LinkedList {
     currA.next = currB.next;
     currB.next = temp;
 }
-    public void insertm(int i , int d)
-    {
-        node n = new node(d);
-        node c = head;
-        int it = 0;
-        while(it<i-1)
-        {
-            c=c.next;
-            it++;
-        }
-        n.next = c.next;
-        c.next=n;
-    
-
-    }
+   
     public void reverse()
     {
         node p = null;
@@ -117,11 +124,12 @@ public class LinkedList {
 }
     public static void main(String[] args) {
         LinkedList l = new LinkedList();
-        l.insert(4);
-        l.insert(5);
-        l.insert(6);
-        l.insert(7);
+        l.inserte(4);
+        l.inserte(5);
+        l.inserte(6);
+        l.inserte(7);
         l.insertm(2,8);
+        l.inserts(12);
         l.display();
         l.change(4,8);
         System.out.println(" ");
